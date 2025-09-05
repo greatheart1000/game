@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三国杀 - 策略卡牌游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- 游戏标题 -->
+        <header class="game-header">
+            <h1>三国杀</h1>
+            <div class="game-controls">
+                <button id="start-game" class="btn btn-primary">开始游戏</button>
+                <button id="add-player" class="btn btn-secondary">添加玩家</button>
+                <button id="rules" class="btn btn-info">游戏规则</button>
+            </div>
+        </header>
+
+        <!-- 游戏区域 -->
+        <main class="game-area">
+            <!-- 其他玩家区域 -->
+            <div class="other-players" id="other-players">
+                <!-- 动态生成其他玩家 -->
+            </div>
+
+            <!-- 中央游戏区域 -->
+            <div class="center-area">
+                <!-- 弃牌堆 -->
+                <div class="discard-pile" id="discard-pile">
+                    <h3>弃牌堆</h3>
+                    <div class="card-stack"></div>
+                </div>
+
+                <!-- 判定区 -->
+                <div class="judgment-area" id="judgment-area">
+                    <h3>判定区</h3>
+                    <div class="card-stack"></div>
+                </div>
+            </div>
+
+            <!-- 当前玩家区域 -->
+            <div class="current-player" id="current-player">
+                <div class="player-info">
+                    <h3 id="player-name">玩家1</h3>
+                    <div class="player-stats">
+                        <span>体力: <span id="player-hp">4</span>/<span id="player-max-hp">4</span></span>
+                        <span>手牌: <span id="player-hand-count">4</span></span>
+                    </div>
+                </div>
+                
+                <!-- 装备区 -->
+                <div class="equipment-area">
+                    <div class="equipment-slot" id="weapon-slot">
+                        <h4>武器</h4>
+                        <div class="card"></div>
+                    </div>
+                    <div class="equipment-slot" id="armor-slot">
+                        <h4>防具</h4>
+                        <div class="card"></div>
+                    </div>
+                    <div class="equipment-slot" id="horse-slot">
+                        <h4>坐骑</h4>
+                        <div class="card"></div>
+                    </div>
+                </div>
+
+                <!-- 手牌区域 -->
+                <div class="hand-area" id="hand-area">
+                    <h3>手牌</h3>
+                    <div class="hand-cards"></div>
+                </div>
+
+                <!-- 操作按钮 -->
+                <div class="action-buttons">
+                    <button id="end-turn" class="btn btn-warning">结束回合</button>
+                    <button id="use-skill" class="btn btn-success">使用技能</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- 游戏日志 -->
+        <div class="game-log" id="game-log">
+            <h3>游戏日志</h3>
+            <div class="log-content"></div>
+        </div>
+    </div>
+
+    <!-- 卡牌详情弹窗 -->
+    <div id="card-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="card-details"></div>
+        </div>
+    </div>
+
+    <!-- 游戏规则弹窗 -->
+    <div id="rules-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>游戏规则</h2>
+            <div class="rules-content">
+                <h3>基本规则</h3>
+                <p>1. 游戏开始时，每个玩家选择一名武将，获得相应的体力和技能</p>
+                <p>2. 每回合分为摸牌阶段、出牌阶段、弃牌阶段</p>
+                <p>3. 使用【杀】攻击其他玩家，使用【闪】躲避攻击</p>
+                <p>4. 装备武器、防具、坐骑来增强实力</p>
+                <p>5. 使用锦囊牌获得特殊效果</p>
+                <p>6. 当体力降至0时，玩家死亡</p>
+                <p>7. 最后存活的玩家获胜</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 粒子效果画布 -->
+    <canvas id="particle-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1000;"></canvas>
+    
+    <!-- 音效控制 -->
+    <div class="sound-controls">
+        <button id="sound-toggle" class="btn btn-info">🔊</button>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
+    </div>
+
+    <script src="sounds.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
