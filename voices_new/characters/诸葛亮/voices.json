@@ -1,0 +1,16 @@
+{
+  "character_name": "诸葛亮",
+  "voice_type": "Ethan",
+  "voices": {
+    "intro": "characters/诸葛亮/intro.wav",
+    "attack": "characters/诸葛亮/attack.wav",
+    "defend": "characters/诸葛亮/defend.wav",
+    "skill": "characters/诸葛亮/skill.wav",
+    "damage": "characters/诸葛亮/damage.wav",
+    "death": "characters/诸葛亮/death.wav",
+    "victory": "characters/诸葛亮/victory.wav",
+    "strategy": "characters/诸葛亮/attack.wav",
+    "wisdom": "characters/诸葛亮/wisdom.wav"
+  },
+  "generated_at": "2025-09-07T16:54:50.474609"
+}

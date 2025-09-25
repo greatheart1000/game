@@ -1,0 +1,14 @@
+{
+  "character_name": "华佗",
+  "voice_type": "Ethan",
+  "voices": {
+    "intro": "characters/华佗/intro.wav",
+    "attack": "characters/华佗/attack.wav",
+    "defend": "characters/华佗/defend.wav",
+    "skill": "characters/华佗/defend.wav",
+    "damage": "characters/华佗/damage.wav",
+    "death": "characters/华佗/death.wav",
+    "victory": "characters/华佗/defend.wav"
+  },
+  "generated_at": "2025-09-07T16:52:06.384869"
+}

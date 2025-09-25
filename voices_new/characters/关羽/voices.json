@@ -1,0 +1,17 @@
+{
+  "character_name": "关羽",
+  "voice_type": "Ethan",
+  "voices": {
+    "intro": "characters/关羽/intro.wav",
+    "attack": "characters/关羽/attack.wav",
+    "defend": "characters/关羽/defend.wav",
+    "skill": "characters/关羽/skill.wav",
+    "damage": "characters/关羽/damage.wav",
+    "death": "characters/关羽/death.wav",
+    "victory": "characters/关羽/victory.wav",
+    "taunt": "characters/关羽/taunt.wav",
+    "ally": "characters/关羽/ally.wav",
+    "enemy": "characters/关羽/enemy.wav"
+  },
+  "generated_at": "2025-09-07T16:51:38.464966"
+}

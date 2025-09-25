@@ -1,0 +1,16 @@
+{
+  "character_name": "貂蝉",
+  "voice_type": "Cherry",
+  "voices": {
+    "intro": "characters/貂蝉/intro.wav",
+    "attack": "characters/貂蝉/attack.wav",
+    "defend": "characters/貂蝉/defend.wav",
+    "skill": "characters/貂蝉/skill.wav",
+    "damage": "characters/貂蝉/damage.wav",
+    "death": "characters/貂蝉/death.wav",
+    "victory": "characters/貂蝉/victory.wav",
+    "charm": "characters/貂蝉/skill.wav",
+    "scheme": "characters/貂蝉/attack.wav"
+  },
+  "generated_at": "2025-09-07T16:55:27.243481"
+}

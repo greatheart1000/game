@@ -1,0 +1,11 @@
+{
+  "character_name": "孙尚香",
+  "voice_type": "Chelsie",
+  "voices": {
+    "attack": "characters/孙尚香/attack.wav",
+    "defend": "characters/孙尚香/defend.wav",
+    "skill": "characters/孙尚香/skill.wav",
+    "damage": "characters/孙尚香/damage.wav"
+  },
+  "generated_at": "2025-09-07T16:34:37.565522"
+}

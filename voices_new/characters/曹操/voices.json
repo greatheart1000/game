@@ -1,0 +1,16 @@
+{
+  "character_name": "曹操",
+  "voice_type": "Ethan",
+  "voices": {
+    "intro": "characters/曹操/intro.wav",
+    "attack": "characters/曹操/attack.wav",
+    "defend": "characters/曹操/defend.wav",
+    "skill": "characters/曹操/skill.wav",
+    "damage": "characters/曹操/damage.wav",
+    "death": "characters/曹操/death.wav",
+    "victory": "characters/曹操/victory.wav",
+    "ambition": "characters/曹操/attack.wav",
+    "scheme": "characters/曹操/scheme.wav"
+  },
+  "generated_at": "2025-09-07T16:53:37.660530"
+}
